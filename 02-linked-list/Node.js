@@ -13,7 +13,7 @@ class Node{
     }
     
     getData(){
-        return this.getData
+        return this.data
     }
 
     setData(newData){
@@ -39,4 +39,4 @@ class Node{
 
 
 
-module.export = Node
+module.exports = Node

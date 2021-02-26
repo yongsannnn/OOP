@@ -24,4 +24,60 @@ class LinkedList {
         current.setNext(newNode);
         }
     }
+    insertAt(index,newNode){
+        if (index == 0){
+            // means we are inserting newNode at the front
+            // store a temp reference to the former head
+            let oldHead = this.head;
+            this.head = newNode;
+            this.head.setNext(oldHead);
+        } else {
+            let current = this.head;
+            for (let i = 0; i < index - 1; i++){
+                current = current.getNext()
+            }
+            let oldNext = current.getNext()
+            current.setNext(newNode)
+            newNode.setNext(oldNext)
+        }
+    }
+    display(){
+        let current = this.head;
+        while(current != null){
+            console.log(current.getData())
+            current = current.getNext()
+        }
+    }
+
+    deleteAt(index){
+        if (index == 0){
+            // let newNext = this.head.getNext();
+            this.head = this.head.getNext()
+
+            // Alternate
+            // this.head.setNext(this.head.getNext());
+        } else {
+            // Move to the node BEFORE the one we want to delete
+            let current = this.head
+            for(let i = 0; i < index -1 ; i ++){
+                current = current.getNext();
+            }
+            // now current is at the node BEFORE what we want to delete
+            let newNext = current.getNext().getNext();
+            current.setNext(newNext)
+            
+            // Alternate
+            // current.setNext(current.getNext().getNext())
+        }
+    }
+
+    getAt(index) {
+        let current = this.head;
+        for (let i =0; i < index; i++) {
+            current = current.getNext();
+        }
+        return current.getData();
+    }
 }
+
+module.exports = LinkedList

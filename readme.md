@@ -63,6 +63,8 @@ When learning Java will talk about this more
 
 # Linked list (refer to Node.js under 02-linked-list)
 
+[Article to reference](https://humanwhocodes.com/blog/2019/01/computer-science-in-javascript-linked-list/)
+
 It is a gateway to more complex things
 
 Every data that is stored in a linked list is a node
