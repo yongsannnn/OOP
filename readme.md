@@ -87,3 +87,10 @@ In a list, it starts with a head (before the first node) and ends with a null (a
 Two case that will happen (reference to LinkedList.js)
 1. When the list is empty
 2. When the list is occupied
+
+
+## LinkedList Questions
+1. Add a function with the name `count` to the LinkedList that returns how many items there.
+
+2. Add a function with the name `contains` and returns `true` if the given argument exists as data in one of the nodes in the linked list.
+Else return `false`
