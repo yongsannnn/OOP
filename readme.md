@@ -59,3 +59,29 @@ Not needed in JavaScript
 
 
 When learning Java will talk about this more
+
+
+# Linked list (refer to Node.js under 02-linked-list)
+
+It is a gateway to more complex things
+
+Every data that is stored in a linked list is a node
+
+Every node knows what is the next node AFTER it
+
+Normally we are using Vectors 
+
+Vectors can solve data fragmentation
+
+Single linked list and Double linked list (can refer to previous node)
+
+Must understand the "next" behaviour
+
+Linked list is a collection of nodes that contain data elements in a linear collection. 
+
+In a list, it starts with a head (before the first node) and ends with a null (after the last node).
+
+
+Two case that will happen (reference to LinkedList.js)
+1. When the list is empty
+2. When the list is occupied
