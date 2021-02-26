@@ -15,3 +15,4 @@ numbers.display()
 // console.log("The number is " + numbers.getAt(1))
 
 console.log(numbers.count())
+console.log(numbers.contains(105))

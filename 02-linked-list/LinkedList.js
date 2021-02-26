@@ -89,6 +89,19 @@ class LinkedList {
         }
         return counter
     }
+
+    contains(searchNode){
+        let current = this.head
+        while(current !=null){
+            if(current.getData() == searchNode){
+                return true
+            } else {
+                current = current.getNext()
+            }
+        } 
+        return false
+
+    }
 }
 
 module.exports = LinkedList
