@@ -94,3 +94,8 @@ Two case that will happen (reference to LinkedList.js)
 
 2. Add a function with the name `contains` and returns `true` if the given argument exists as data in one of the nodes in the linked list.
 Else return `false`
+
+
+# Stack and Queue
+
+# Recursion
