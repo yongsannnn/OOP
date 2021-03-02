@@ -83,23 +83,60 @@ class LinkedList {
         let current = this.head
         let counter = 0
         // console.log(current)
-        while (current !=null){
+        while (current != null) {
             counter += 1
             current = current.getNext()
         }
         return counter
     }
 
-    contains(searchNode){
+    contains(searchNode) {
         let current = this.head
-        while(current !=null){
-            if(current.getData() == searchNode){
+        while (current != null) {
+            if (current.getData() == searchNode) {
                 return true
             } else {
                 current = current.getNext()
             }
-        } 
+        }
         return false
+
+    }
+
+     insertSorted(number) {
+        let newNode = new Node(number);
+        if (this.head == null) {
+            this.head = newNode;
+        } else {
+
+            // if the list is not empty
+            let prev = null;
+            let current = this.head;
+            while (current != null) {
+
+                if (number < current.getData())
+                {
+                    // found the place to insert at
+                    if (prev != null) {
+                        prev.setNext(newNode);
+                        newNode.setNext(current);
+                    } else {
+                        this.head = newNode;
+                        newNode.setNext(current);
+                    }
+
+                    return;
+                }
+
+                prev = current;
+                current = current.getNext(); 
+            }
+
+            // if we reach the end of the loop,
+            // means the new node is supposed to be at the aback
+            prev.setNext(newNode);
+
+        }
 
     }
 }
