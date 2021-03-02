@@ -56,7 +56,7 @@ Only way is to have consenses not to touch other people's variable
 Not needed in JavaScript
 
 ## Composition
-
+As a class, it can contain another class. Example a school have many department. 
 
 When learning Java will talk about this more
 
