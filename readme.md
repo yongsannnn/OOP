@@ -116,3 +116,27 @@ Parentheses checking
 
 
 # Recursion
+Iterative loop (while and for)
+```` 
+for (let i = 0; i<=10; i++){
+    console.log(i)
+}
+``` 
+
+Using recursive way to call a loop
+You will get a COPY of the function inside the stack
+Recursive solution has three component
+Processing - What do you do  to the data
+Base case - When you do not need to call the function back
+Recursive - Start another function inside the function
+```
+function countUp(start, end){
+    console.log(start)
+    if (start == end){
+        return;
+    }
+    countUp(start+1, end); 
+}
+
+(countUp(1,4))
+```

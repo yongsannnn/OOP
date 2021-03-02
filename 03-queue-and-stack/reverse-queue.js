@@ -23,6 +23,6 @@ while (q1.peek() != null){
 while (s1.peek() != null){
     let item = s1.pop()
     console.log(item)
+    q1.enqueue(item)
 }
 
-console.log(s1)
