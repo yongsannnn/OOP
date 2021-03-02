@@ -108,5 +108,11 @@ Example, printer queue system
 #### Computer Simulation (Queue)
 Using a random number generattor to simulate queues/processess, simulations can help planners to predict the efficiency of a business process or assembly line.
 
-Stacks are last-in first-out data structures (LIFO)
+Stacks are last-in first-out data structures. (LIFO)
+
+Example of stacks, undo function in computer, stack of cards, browser history & back button.
+
+Parentheses checking
+
+
 # Recursion
