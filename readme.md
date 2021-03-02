@@ -97,5 +97,16 @@ Else return `false`
 
 
 # Stack and Queue
+List, queue and stack are the basic data structures used in programming. 
 
+Lists are also known as linked lists.
+
+Queues are first-in first-out data structures.  (FIFO)
+
+Example, printer queue system
+
+#### Computer Simulation (Queue)
+Using a random number generattor to simulate queues/processess, simulations can help planners to predict the efficiency of a business process or assembly line.
+
+Stacks are last-in first-out data structures (LIFO)
 # Recursion

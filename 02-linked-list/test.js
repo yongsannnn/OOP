@@ -19,5 +19,4 @@ numbers.display()
 
 numbers.insertSorted(104)
 console.log("After insert!!!")
-console.log(numbers.insertSorted(104))
 numbers.display()
