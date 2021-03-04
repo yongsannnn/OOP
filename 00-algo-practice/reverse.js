@@ -26,14 +26,14 @@ let stack = new Stack()
 // Removing item while pushing into stack
 while(queue.peek() != null){
     let item = queue.dequeue()
-    // console.log(item.getData())
+    console.log(item.getData())
     stack.push(item.getData())
 }
 
 // Stack is LIFO method when we pop it out, items will be reversed.
 while(stack.peek() != null){
     let item = stack.pop();
-    // console.log(item.getData())
+    console.log(item.getData())
     queue.enqueue(item.getData())
 }
 
